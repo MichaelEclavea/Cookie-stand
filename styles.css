@@ -1,0 +1,29 @@
+#shopTitle {
+    text-align: center;
+}
+
+body {
+    font-size: 2em;
+}
+
+#tableData {
+    text-align: center;
+}
+
+.allTable {
+    border-style: solid;
+    text-align: center;
+    border-color: black;
+}
+
+.tableList {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+td {
+    border-style: solid;
+    text-align: center;
+    border-color: black;
+    padding: 5px;
+}

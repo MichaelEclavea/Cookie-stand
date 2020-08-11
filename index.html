@@ -3,41 +3,95 @@
 
 <head>
     <title>Salmon Cookie Shop</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-
+        <div id='shopTitle'>
+            <h1>Salmon Cookie Shop</h1>
+            <img src="images/salmon.png" alt="salmon image">
+        </div>
+        <hr>
     </header>
     <main>
-        <ul>
-            <h1>Seattle</h1>
-            <h2 id='seattle'></h2>
-            <h2 id='seattleTotal'> </h2>
-            <br>
-        </ul>
+        <div id="tableData">
+            <table class='allTable' ; cellspacing=10;>
+                <thead>
+                    <tr>
+                        <td class="tableList">Location</td>
+                        <td class="tableList">Min/Cust</td>
+                        <td class="tableList">Max/Cust</td>
+                        <td class="tableList">Avg Cookie / Sale</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Seattle</td>
+                        <td>23</td>
+                        <td>65</td>
+                        <td>6.3</td>
+                    </tr>
+                    <tr>
+                        <td>Tokyo</td>
+                        <td>3</td>
+                        <td>24</td>
+                        <td>1.2</td>
+                    </tr>
+                    <tr>
+                        <td>Dubai</td>
+                        <td>11</td>
+                        <td>38</td>
+                        <td>3.7</td>
+                    </tr>
+                    <tr>
+                        <td>Paris</td>
+                        <td>20</td>
+                        <td>38</td>
+                        <td>2.3</td>
+                    </tr>
+                    <tr>
+                        <td>lima</td>
+                        <td>2</td>
+                        <td>16</td>
+                        <td>4.6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+        <section id="seattleSection">
+            <ul>
+                <h1>Seattle</h1>
+                <li id="seattle"></li>
+                <li class='cityTotal' id='seattleTotal'> </li>
+                <br>
+            </ul>
+        </section>
         <ul>
             <h1>Tokyo</h1>
-            <h2 id='tokyo'></h2>
-            <h2 id='tokyoTotal'> </h2>
+            <li id='tokyo'></li>
+            <li class='cityTotal' id='tokyoTotal'> </li>
             <br>
         </ul>
         <ul>
             <h1>Dubai</h1>
-            <h2 id='dubai'></h2>
-            <h2 id='dubaiTotal'> </h2>
+            <li id='dubai'></li>
+            <li class='cityTotal' id='dubaiTotal'> </li>
             <br>
         </ul>
         <ul>
             <h1>Paris</h1>
-            <h2 id='paris'></h2>
-            <h2 id='parisTotal'> </h2>
+            <li id='paris'></li>
+            <li class='cityTotal' id='parisTotal'> </li>
             <br>
         </ul>
         <ul>
             <h1>Lima</h1>
-            <h2 id='lima'></h2>
-            <h2 id='limaTotal'> </h2>
+            <li id='lima'></li>
+            <li class='cityTotal' id='limaTotal'> </li>
             <br>
         </ul>
     </main>

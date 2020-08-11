@@ -14,7 +14,7 @@ var seattle = {
             this.cookieTotal = this.cookieTotal + cookiesBaked;
             var parent = document.getElementById('seattle');
             var listItem = document.createElement('li');
-            listItem.textContent = `at ${clock[i]} make ${cookiesBaked} cookies`;
+            listItem.textContent = `${clock[i]} make ${cookiesBaked} cookies`;
             parent.appendChild(listItem);
 
         }
@@ -37,7 +37,7 @@ var tokyo = {
             this.cookieTotal = this.cookieTotal + cookiesBaked;
             var parent = document.getElementById('tokyo');
             var listItem = document.createElement('li');
-            listItem.textContent = `at ${clock[i]} make ${cookiesBaked} cookies`;
+            listItem.textContent = `${clock[i]} make ${cookiesBaked} cookies`;
             parent.appendChild(listItem);
 
         }
@@ -62,7 +62,7 @@ var dubai = {
             this.cookieTotal = this.cookieTotal + cookiesBaked;
             var parent = document.getElementById('dubai');
             var listItem = document.createElement('li');
-            listItem.textContent = `at ${clock[i]} make ${cookiesBaked} cookies`;
+            listItem.textContent = `${clock[i]} make ${cookiesBaked} cookies`;
             parent.appendChild(listItem);
 
         }
@@ -85,7 +85,7 @@ var paris = {
             this.cookieTotal = this.cookieTotal + cookiesBaked;
             var parent = document.getElementById('paris');
             var listItem = document.createElement('li');
-            listItem.textContent = `at ${clock[i]} make ${cookiesBaked} cookies`;
+            listItem.textContent = `${clock[i]} make ${cookiesBaked} cookies`;
             parent.appendChild(listItem);
 
         }
@@ -109,7 +109,7 @@ var lima = {
             this.cookieTotal = this.cookieTotal + cookiesBaked;
             var parent = document.getElementById('lima');
             var listItem = document.createElement('li');
-            listItem.textContent = `at ${clock[i]} make ${cookiesBaked} cookies`;
+            listItem.textContent = `${clock[i]} make ${cookiesBaked} cookies`;
             parent.appendChild(listItem);
 
         }
