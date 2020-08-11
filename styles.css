@@ -1,9 +1,15 @@
 #shopTitle {
+    font-weight: 900;
+    font-size: xxx-large;
+    color: salmon;
     text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    ;
 }
 
 body {
     font-size: 2em;
+    background-color: #72ECFA;
 }
 
 #tableData {
