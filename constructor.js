@@ -7,30 +7,31 @@ function Location(minPeople, maxPeople, avgCookie, cookieTotal) {
     this.cookieTotoal = cookieTotal;
 }
 
+Location.prototype.render = function(elementId, totalElementId) {
+    var clock = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
+    for (var i = 0; i < clock.length; i++) {
+        var Customers = Math.random() * (this.maxPeople - this.minPeople + 1) + this.minPeople;
+        var cookiesBaked = Customers * this.avgCookie;
+        cookiesBaked = Math.ceil(cookiesBaked);
+        this.cookieTotal = this.cookieTotal + cookiesBaked;
+        var parent = document.getElementById(elementId);
+        var listItem = document.createElement('li');
+        listItem.textContent = `${clock[i]} make ${cookiesBaked} cookies`;
+        parent.appendChild(listItem);
+    }
+    document.getElementById(totalElementId).innerHTML = `Bake ${this.cookieTotal} cookies in total for the whole day.`;
+}
+
+
 var seattle = new Location(23, 65, 6.3, 0);
 
-var seattle = {
-    minPeople: 23,
-    maxPeople: 65,
-    avgCookie: 6.3,
-    cookieTotal: 0,
-    render: function() {
-        var clock = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
-        for (var i = 0; i < 14; i++) {
-            var seattleCustomers = Math.random() * (this.maxPeople - this.minPeople + 1) + this.minPeople;
-            var cookiesBaked = seattleCustomers * this.avgCookie;
-            cookiesBaked = Math.ceil(cookiesBaked);
-            this.cookieTotal = this.cookieTotal + cookiesBaked;
-            var parent = document.getElementById('seattle');
-            var listItem = document.createElement('li');
-            listItem.textContent = `${clock[i]} make ${cookiesBaked} cookies`;
-            parent.appendChild(listItem);
+seattle.render('seattle', 'se');
 
-        }
-        document.getElementById('seattleTotal').innerHTML = `Bake ${this.cookieTotal} cookies in total for the whole day.`;
-    }
-}
-seattle.render();
+
+
+
+
+
 
 var tokyo = {
     minPeople: 3,
