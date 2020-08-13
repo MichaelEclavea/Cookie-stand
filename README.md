@@ -1,2 +1,2 @@
-# Cookie-stand
-lab: 06
+# cookie-stand
+pat's cookie stand

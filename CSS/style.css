@@ -1,0 +1,125 @@
+#fish {
+
+  z-index: -1;
+  padding-top: 10px;
+  background-color:honeydew;
+  text-align: center;
+  scroll-padding-top: 50%;
+  border: honeydew;
+  border-width: 30px;
+  color: #65b89e;
+}
+
+#fishImg{
+  padding-bottom: 5%;;
+}
+
+body {
+
+  font-family: Georgia;
+  background-color: #f8fff0;
+}
+
+hr{
+  height: 4px;
+ background-color: #a1d6c3;
+ color: #a1d6c3;
+ 
+}
+
+h1 {
+  font-family: 'Luckiest Guy', cursive;
+  font-weight: 900;
+  font-size: 6rem;
+  color: #69bd9e;
+  text-align: center;
+  background-color: honeydew;
+}
+
+#allImages {
+  height: 50%;
+width: 75%;
+}
+
+.saleBoards {
+  color: #69bd9e;
+  text-align: center;
+  margin-left: 100px;
+}
+
+
+.saleBoards h3{
+  text-decoration: underline;
+  position: relative;
+}
+
+#saleTitle{
+  background-color: #65b89e;
+  color: #69bd9e;
+  text-align: center;
+  padding-left: 100px;
+}
+
+#image1 {
+  text-align: center;
+  
+}
+
+
+#sale1 {
+  margin: 2%;
+  float: left;
+  background-color: honeydew;
+  border-style: solid;
+  border-width: 10%;
+  width: 300px;
+  height: 400px;
+  font-size: 2rem;
+ 
+  text-align: center;
+}
+
+#sale2 {
+  margin: 2%;
+  float: left;
+  background-color: honeydew;
+  border-style: solid;
+  border-width: 10%;
+  width: 300px;
+  height: 400px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#sale3{
+  margin: 2%;
+  float: left;
+  background-color: honeydew;
+  border-style: solid;
+  border-width: 10%;
+  width: 300px;
+  height: 400px;
+  font-size: 2rem;
+  
+  text-align: center;
+}
+
+#sale3 h3 {
+  text-decoration: underline;
+}
+
+.about-section{
+  
+  text-align: center;
+}
+
+#aboutTitle{
+  background-color: honeydew;
+  border-style: solid;
+  text-align: center;
+  padding: 5% 10%;
+}
+
+footer{
+  text-align: center;
+}
