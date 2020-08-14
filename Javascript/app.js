@@ -5,10 +5,10 @@ var seattle = {
   maxPeople: 65,
   avgCookie: 6.3,
   cookieDayTotal: 0,
-  render: function(){
+  render: function () {
     var time = ['6am', '7am', '8am', '9am', '10am', '11am', 'Noon', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
-    for (var i = 0; i < time.length; i++){
-      var seattleCustomers = Math.random() * (this.maxPeople - this.minPeople) + this.minPeople; 
+    for (var i = 0; i < time.length; i++) {
+      var seattleCustomers = Math.random() * (this.maxPeople - this.minPeople) + this.minPeople;
       var cookieNumber = seattleCustomers * this.avgCookie;
       var cookiesBaked = Math.ceil(cookieNumber);
       this.cookieDayTotal = this.cookieDayTotal + cookiesBaked;  // this.cookieDayTotal += CookiesBaked
@@ -17,7 +17,7 @@ var seattle = {
       listItem.textContent = `at ${time[i]} make ${cookiesBaked} cookies`;
       parent.appendChild(listItem);
     }
-  document.getElementById('seattleTotal').innerHTML = `Bake ${this.cookieDayTotal} cookies in total for the whole day.`;
+    document.getElementById('seattleTotal').innerHTML = `Bake ${this.cookieDayTotal} cookies in total for the whole day.`;
   }
 }
 seattle.render();
@@ -27,10 +27,10 @@ var tokyo = {
   maxPeople: 24,
   avgCookie: 1.2,
   cookieDayTotal: 0,
-  render: function(){
+  render: function () {
     var time = ['6am', '7am', '8am', '9am', '10am', '11am', 'Noon', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
-    for (var i = 0; i < time.length; i++){
-      var tokyoCustomers = Math.random() * (this.maxPeople - this.minPeople) + this.minPeople; 
+    for (var i = 0; i < time.length; i++) {
+      var tokyoCustomers = Math.random() * (this.maxPeople - this.minPeople) + this.minPeople;
       var cookieNumber = tokyoCustomers * this.avgCookie;
       var cookiesBaked = Math.ceil(cookieNumber);
       this.cookieDayTotal = this.cookieDayTotal + cookiesBaked;  // this.cookieDayTotal += CookiesBaked
@@ -49,10 +49,10 @@ var dubai = {
   maxPeople: 38,
   avgCookie: 3.7,
   cookieDayTotal: 0,
-  render: function(){
+  render: function () {
     var time = ['6am', '7am', '8am', '9am', '10am', '11am', 'Noon', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
-    for (var i = 0; i < time.length; i++){
-      var dubaiCustomers = Math.random() * (this.maxPeople - this.minPeople) + this.minPeople; 
+    for (var i = 0; i < time.length; i++) {
+      var dubaiCustomers = Math.random() * (this.maxPeople - this.minPeople) + this.minPeople;
       var cookieNumber = dubaiCustomers * this.avgCookie;
       var cookiesBaked = Math.ceil(cookieNumber);
       this.cookieDayTotal = this.cookieDayTotal + cookiesBaked;  // this.cookieDayTotal += CookiesBaked
@@ -71,10 +71,10 @@ var paris = {
   maxPeople: 38,
   avgCookie: 2.3,
   cookieDayTotal: 0,
-  render: function(){
+  render: function () {
     var time = ['6am', '7am', '8am', '9am', '10am', '11am', 'Noon', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
-    for (var i = 0; i < time.length; i++){
-      var parisCustomers = Math.random() * (this.maxPeople - this.minPeople) + this.minPeople; 
+    for (var i = 0; i < time.length; i++) {
+      var parisCustomers = Math.random() * (this.maxPeople - this.minPeople) + this.minPeople;
       var cookieNumber = parisCustomers * this.avgCookie;
       var cookiesBaked = Math.ceil(cookieNumber);
       this.cookieDayTotal = this.cookieDayTotal + cookiesBaked;  // this.cookieDayTotal += CookiesBaked
@@ -83,7 +83,7 @@ var paris = {
       listItem.textContent = `at ${time[i]} make ${cookiesBaked} cookies`;
       parent.appendChild(listItem);
     }
- document.getElementById('parisTotal').innerHTML = `Bake ${this.cookieDayTotal} cookies in total for the whole day.`;
+    document.getElementById('parisTotal').innerHTML = `Bake ${this.cookieDayTotal} cookies in total for the whole day.`;
   }
 }
 paris.render();
@@ -93,10 +93,10 @@ var lima = {
   maxPeople: 16,
   avgCookie: 4.6,
   cookieDayTotal: 0,
-  render: function(){
+  render: function () {
     var time = ['6am', '7am', '8am', '9am', '10am', '11am', 'Noon', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
-    for (var i = 0; i < time.length; i++){
-      var limaCustomers = Math.random() * (this.maxPeople - this.minPeople) + this.minPeople; 
+    for (var i = 0; i < time.length; i++) {
+      var limaCustomers = Math.random() * (this.maxPeople - this.minPeople) + this.minPeople;
       var cookieNumber = limaCustomers * this.avgCookie;
       var cookiesBaked = Math.ceil(cookieNumber);
       this.cookieDayTotal = this.cookieDayTotal + cookiesBaked;  // this.cookieDayTotal += CookiesBaked
@@ -105,7 +105,31 @@ var lima = {
       listItem.textContent = `at ${time[i]} make ${cookiesBaked} cookies`;
       parent.appendChild(listItem);
     }
-  document.getElementById('limaTotal').innerHTML = `Bake ${this.cookieDayTotal} cookies in total for the whole day.`;
+    document.getElementById('limaTotal').innerHTML = `Bake ${this.cookieDayTotal} cookies in total for the whole day.`;
   }
 }
 lima.render();
+
+
+cookieForm.addEventListener('submit', function () {
+  //tell the browser to NOT get rid of the data 
+  event.preventDefault();
+
+  // create variables for data in the Form
+  // min customers 
+  var minCust = parseInt(event.target.minCustomers.value);
+  // locations
+  var locations = parseInt(event.target.location.value);
+
+  // max customers
+  var maxCust = parseInt(event.target.maxcustomers.value);
+  // average cookie sales
+  var avgCookie = parseInt(event.target.avgCookies.value);
+
+  // new object instance of values created
+  new Location(minCust, maxCust, avgCookie, location);
+
+  parent.innerHTML = '';
+
+  
+})
