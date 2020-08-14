@@ -1,5 +1,16 @@
-#fish {
+#sectionOne {
+  text-align: right;
+  background-color: gray;
+  height: 40px;
+  
+}
 
+#navigation {
+  margin-top: 20px;
+  text-align: right;
+}
+
+#fish {
   z-index: -1;
   padding-top: 10px;
   background-color:honeydew;
@@ -15,7 +26,7 @@
 }
 
 body {
-
+text-align: center;
   font-family: Georgia;
   background-color: #f8fff0;
 }
