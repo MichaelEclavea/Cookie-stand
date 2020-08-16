@@ -1,136 +1,83 @@
-#sectionOne {
-  text-align: right;
-  background-color: gray;
-  height: 40px;
+body {
+  background-color: #DAF2EE;
+}
+#nav-bar {
+display: flex;
+ height: 50px;
+ width: 100%;
+ border: 5px solid #6EB7AB;
+ 
+ background-color: #6EB7AB;
+
+}
+
+.nav-items{
+ text-align: center;
+ color: honeydew;
+  margin-left: 2px;
+  margin-right: 2px;
+  border: 1px solid #6EB7AB;
+  padding: 5px 10px;
+  font-size: 30px;
+  background-color: black;
   
 }
 
-#navigation {
-  margin-top: 20px;
-  text-align: right;
-}
-
-#fish {
-  z-index: -1;
-  padding-top: 10px;
-  background-color:honeydew;
+h1{
+  padding-top: 40px;
+  font-size: 5rem;
+  font-family: 'Luckiest Guy';
+  
   text-align: center;
-  scroll-padding-top: 50%;
-  border: honeydew;
-  border-width: 30px;
-  color: #65b89e;
+  color: #6EB7AB;
+  line-height: 10px;
 }
 
-#fishImg{
-  padding-bottom: 5%;;
-}
-
-body {
-text-align: center;
-  font-family: Georgia;
-  background-color: #f8fff0;
+#fish-img {
+  padding-top: 50px;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-left: 50px;
 }
 
 hr{
-  height: 4px;
- background-color: #a1d6c3;
- color: #a1d6c3;
- 
+  height: px;
+  background-color: #A4B7B4;
+  text-decoration-style: dotted;
 }
 
-h1 {
-  font-family: 'Luckiest Guy', cursive;
-  font-weight: 900;
-  font-size: 6rem;
-  color: #69bd9e;
+main{
   text-align: center;
-  background-color: honeydew;
+  padding-bottom: 200px;
+  padding-top: 100px;
 }
 
-#allImages {
-  height: 50%;
-width: 75%;
-}
-
-.saleBoards {
-  color: #69bd9e;
-  text-align: center;
-  margin-left: 100px;
-}
-
-
-.saleBoards h3{
-  text-decoration: underline;
-  position: relative;
-}
-
-#saleTitle{
-  background-color: #65b89e;
-  color: #69bd9e;
-  text-align: center;
-  padding-left: 100px;
-}
-
-#image1 {
-  text-align: center;
+#sale-title{
+  display: flex;
+  text-align:center;
   
 }
 
-
-#sale1 {
-  margin: 2%;
-  float: left;
-  background-color: honeydew;
-  border-style: solid;
-  border-width: 10%;
-  width: 300px;
-  height: 400px;
-  font-size: 2rem;
- 
+.sale-boards {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 350px;
+  width: 250px;
   text-align: center;
+  border: 2px solid #6EB7AB;
+  vertical-align: middle;
+  border-radius: 10%;
+  font-size: 20px;
+  background-color: honeydew;
 }
 
-#sale2 {
-  margin: 2%;
-  float: left;
-  background-color: honeydew;
-  border-style: solid;
-  border-width: 10%;
-  width: 300px;
-  height: 400px;
-  font-size: 2rem;
-  text-align: center;
+.sale-boards hr {
+  height: 2px;
 }
 
-#sale3{
-  margin: 2%;
-  float: left;
-  background-color: honeydew;
-  border-style: solid;
-  border-width: 10%;
-  width: 300px;
-  height: 400px;
+.sale-boards h3{
   font-size: 2rem;
   
-  text-align: center;
 }
 
-#sale3 h3 {
-  text-decoration: underline;
-}
-
-.about-section{
-  
-  text-align: center;
-}
-
-#aboutTitle{
-  background-color: honeydew;
-  border-style: solid;
-  text-align: center;
-  padding: 5% 10%;
-}
-
-footer{
-  text-align: center;
-}
