@@ -3,35 +3,36 @@
 
 <head>
   <title id="shopTitle">Pat's Cookie Stand</title>
+  <link rel="stylesheet" href="reset.css">
   <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mrs+Sheppards&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <header id="nav-bar">
- 
- <a class="nav-items">Home</a>
- <a class="nav-items">Events</a>
+ <a href="#shoptTitle" class="nav-items">Home</a>
+ <a href="#about-section" class="nav-items">Events</a>
  <a class="nav-items">Accessories</a>
  <a class="nav-items">Apparel</a>
  <a class="nav-items">Featured</a>
-
+ <img src="images/fish.jpg" id="fish-icon" />
 </header>
 <body>
 
   <h1>Pat's</h1>
   <h1>Salmon Cookies</h1>
-  <hr>
+  <hr id="hr-heading">
   
-
+<div id="fish-container">
 <img id="fish-img" src="images/salmon.png" alt="Salmon Cookies logo" title="Salmon Cookies" />
-
+</div>
   
   <main>
     <table id="sale-title">
       <tr>
         <div id="sale1" class="sale-boards">
           <h3>Sockeye Salmon Chips</h3>
-          <hr>
+          <hr class="hr-sales">
           <p><input type="checkbox" name="prices" id="check"> 1 Dozen - $19.99</p> 
           <p><input type="checkbox" name="prices" id="check"> 6 Count - $12.99</p> 
           <p><input type="checkbox" name="prices" id="check"> Single - $2.50   </p> 
@@ -41,7 +42,7 @@
       <tr>
         <div id="sale2" class="sale-boards">
           <h3>Atlantic Salmon Ahoi</h3>
-          <hr>
+          <hr class="hr-sales">
           <p><input type="checkbox" name="prices" id="check"> 1 Dozen - $17.99</p> 
           <p><input type="checkbox" name="prices" id="check"> 6 Count - $10.99</p> 
           <p><input type="checkbox" name="prices" id="check"> Single - $2.00</p> 
@@ -51,7 +52,7 @@
       <tr>
         <div id="sale3" class="sale-boards">
           <h3>Coho Salmon Crisps</h3>
-          <hr>
+          <hr class="hr-sales">
           <p><input type="checkbox" name="prices" id="check"> 1 Dozen - $15.99</p> 
           <p><input type="checkbox" name="prices" id="check"> 6 Count - $8.99</p> 
           <p><input type="checkbox" name="prices" id="check"> Single - $1.50</p> 
@@ -59,34 +60,36 @@
         </div>
       </tr>
     </table>
-  </main>
 
-    <div id="allImages" class="saleBoards">
-      <img id="image1" src="images/cutter.jpg" class="image" />
-      <img src="images/family.jpg" class="image" />
-      <img src="images/fish.jpg" class="image" />
-      <img src="images/frosted-cookie.jpg" class="image" />
-      <img src="images/salmon.png" class="image" />
-      <img src="images/shirt.jpg" class="image" />
+    <hr class="hr-bottom"> 
+  </main>
+ 
+
+    <div id="images">
+      <img class="images" src="images/cutter.jpg"/>
+      <img class="images" src="images/frosted-cookie.jpg"/>
+      <img class="images" src="images/shirt.jpg" />
     </div>
+    <hr>
     <!-- About the Shop -->
-    <div class="about-section">
-      <div id="about-container">
-      <h1 id="aboutTitle">About Us</h1>
-    </div>
+      <p id="about-us">About Us</p>
+      <hr id="hr-footer">
+
+      <div id="family-container">
+      <img id="family" src="images/family.jpg"/>
       <p>We are a locally owned family business. We love baking </p>
       <p>cookies just as much as we love salmon. We put our two passions together and Viola! </p>
       <p>Location: Fish way dr Seattle, Wa 98101</p>
       <p>Hours: 6am to 7pm (Mon-Fri)</p>
       <p>Hours: 7am to 5pm (Sat)</p>
-      <p>Closed - Sunday</p>
+      <p> <span>Closed - Sunday.     <a href="pages/sales.html">Click Sales <p>  </p></a><a href="pages/constructorsales.html"><p></p> Sales table constructors</a></span></p>
     </div>
 
 
   
   <footer>
-    <a href="pages/sales.html">Click Sales</a><br>
-    <a href="pages/constructorsales.html">Sales table constructors</a>
+    <br>
+    
   </footer>
   <script src="Javascript/"></script>
 </body>
